@@ -32,7 +32,9 @@ function finalResult() {
 
         if (timePerLap % 1 !== 0) {
             seconds = +(+(timePerLap.split(".")[1]) * lapsNum);
+            if (lapsNum % 1 !== 0) {
 
+            }
             minutes = (Math.trunc(timePerLap) * lapsNum) + Math.trunc((seconds / 60));
             seconds = seconds % 60
         } else {
@@ -42,9 +44,16 @@ function finalResult() {
         if (seconds === undefined) {
             finalTimeSpan.innerHTML = `${minutes} min`
         } else {
-            finalTimeSpan.innerHTML = `${minutes}.${seconds} min`
+            if (lapsNum % 1 !== 0) {
+                if ((+Math.trunc(seconds) + (+lapsNum.split(".")[1] - 2) * 10) >= 60) {
+                    minutes += Math.trunc((+Math.trunc(seconds) + (+lapsNum.split(".")[1] - 2) * 10) / 60)
+                    seconds = Math.trunc((+Math.trunc(seconds) + (+lapsNum.split(".")[1] - 2) * 10) % 60)
+                    finalTimeSpan.innerHTML = `${Math.trunc(minutes)}.${+Math.trunc(seconds)} min`
+                }
+            } else {
+                finalTimeSpan.innerHTML = `${minutes}.${seconds} min`
+            }
         }
-
 
     }
 }
