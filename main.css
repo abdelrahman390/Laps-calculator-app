@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1f1d36;
+  --secondBAckGround-color: #3f3351;
+  --text-color: #e9a6a6;
+}
+
+html,
+body {
+  font-family: arial;
+}
+
+body {
+  background-color: #1f1d36;
+}
+
+header {
+  padding: 20px;
+  background-color: #3f3351;
+  text-align: center;
+  margin-top: 10px;
+}
+header h1 {
+  color: #e9a6a6;
+}
+
+.overAllTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.overAllTime h1 {
+  color: var(--text-color);
+}
+.overAllTime form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+.overAllTime form input {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+.overAllTime form h2 {
+  color: var(--text-color);
+}
+.overAllTime form h2 span {
+  color: white;
+}
+.overAllTime form button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+}
