@@ -79,6 +79,7 @@ section.timePerLap form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 500px;
 }
 section.overAllTime form input,
 section.timePerLap form input {
