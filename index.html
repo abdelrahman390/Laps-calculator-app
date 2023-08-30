@@ -11,19 +11,36 @@
             <h1>Laps calculator app</h1>
         </header>
 
-        <section class="overAllTime">
-            <h1>calculate time</h1>
-            <form action="#">
-                <input type="number" placeholder="laps number" required />
-                <input
-                    type="number"
-                    placeholder="time per 1 completed lap"
-                    required
-                />
+        <h1 class="overAllTime title">calculate Final time</h1>
+        <section class="overAllTime hide">
+            <form>
+                <h4>Note: 1 lap = 400m</h4>
+                <input type="number" placeholder="laps number" />
+                <input type="number" placeholder="time per 1 completed lap" />
                 <h2>
                     Result time for <span class="sec">0/min</span> per lap for
                     <span class="laps">0</span> laps =
                     <span class="final">0 min</span>
+                </h2>
+            </form>
+        </section>
+
+        <h1 class="timePerLap title">Time Per Lap</h1>
+        <section class="timePerLap hide">
+            <form>
+                <input
+                    type="number"
+                    placeholder="number of kilos you want to run"
+                />
+                <input type="number" placeholder="time per 1 completed kilo" />
+                <h2>
+                    to run kilo in <span class="minutes">0 min</span> for
+                    <span class="kilos">0</span> kilo . you must run 400m(1 lap)
+                    in
+                    <span class="final">0/Min</span>
+                </h2>
+                <h2>
+                    Final time = <span class="overAllFinalTime">0/Min</span>
                 </h2>
             </form>
         </section>
