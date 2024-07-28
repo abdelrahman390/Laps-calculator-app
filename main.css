@@ -38,6 +38,7 @@ h1.title {
   padding: 15px 0;
   background-color: #181527;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 section.hide {
